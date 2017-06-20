@@ -36,7 +36,7 @@ function parse(model, response, options = {}) {
   }
 
   this.constructor.jsonColumns.forEach(column => {
-    if (this.attributes[column]) {
+    if (this.attributes[column] && typeof this.attributes[column] === 'string') {
       this.attributes[column] = JSON.parse(this.attributes[column]);
     }
   });

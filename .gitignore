@@ -5,3 +5,4 @@
 /test/mysql/knexfile.js
 /test/postgres/knexfile.js
 /test/sqlite/knexfile.js
+.idea
